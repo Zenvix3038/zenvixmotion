@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stitch - Premium Motion Asset Hub</title>
+    <meta
+      name="description"
+      content="A cinematic motion asset hub for studios, directors, producers, and creative teams."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Stitch home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Stitch</span>
+      </a>
+      <nav class="nav-links" aria-label="Site sections">
+        <a href="#platform">Platform</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#gallery">Screens</a>
+        <a href="#contact">Access</a>
+      </nav>
+      <a class="nav-action" href="#contact">Request access</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Premium motion asset hub</p>
+          <h1 id="hero-title">Stitch</h1>
+          <p class="hero-lede">
+            A theater-dark command center for licensing cinematic assets, reviewing
+            client work, and tracking every studio handoff from brief to delivery.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#gallery">Explore screens</a>
+            <a class="button secondary" href="#workflow">See workflow</a>
+          </div>
+          <dl class="hero-metrics" aria-label="Platform highlights">
+            <div>
+              <dt>4K</dt>
+              <dd>licensed motion assets</dd>
+            </div>
+            <div>
+              <dt>24h</dt>
+              <dd>approval loops</dd>
+            </div>
+            <div>
+              <dt>12</dt>
+              <dd>studio views</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-stage" aria-label="Featured Stitch interface">
+          <img
+            src="assets/marketplace.png"
+            alt="Stitch asset marketplace interface showing cinematic motion assets"
+          />
+          <div class="stage-strip" aria-hidden="true">
+            <span>00:18:42</span>
+            <span>marketplace</span>
+            <span>approved</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="signal-band" aria-label="Trusted workflow signals">
+        <p>Built for producers, directors, motion designers, agencies, and post teams.</p>
+      </section>
+
+      <section class="section platform" id="platform" aria-labelledby="platform-title">
+        <div class="section-heading">
+          <p class="eyebrow">One studio surface</p>
+          <h2 id="platform-title">Every asset, review, purchase, and team action stays connected.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-index">01</span>
+            <h3>Marketplace intelligence</h3>
+            <p>Browse premium packs with license metadata, creator context, and production-ready previews.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index">02</span>
+            <h3>Client approvals</h3>
+            <p>Keep review comments, asset versions, approvals, and handoff notes in one clean workspace.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index">03</span>
+            <h3>Studio operations</h3>
+            <p>Track billing, permissions, activity logs, libraries, and team access without leaving the hub.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section workflow" id="workflow" aria-labelledby="workflow-title">
+        <div class="workflow-copy">
+          <p class="eyebrow">Production flow</p>
+          <h2 id="workflow-title">From discovery to delivery without losing the thread.</h2>
+          <p>
+            Stitch brings the high-friction parts of motion production into a single operating layer:
+            assets are found, purchased, reviewed, revised, and archived with the surrounding context intact.
+          </p>
+        </div>
+        <div class="workflow-steps" aria-label="Stitch workflow">
+          <article>
+            <span>Find</span>
+            <h3>Source cinematic assets</h3>
+            <p>Search by format, mood, package, license, and creator.</p>
+          </article>
+          <article>
+            <span>Review</span>
+            <h3>Collect precise feedback</h3>
+            <p>Approve or request changes while the team sees the same source of truth.</p>
+          </article>
+          <article>
+            <span>Ship</span>
+            <h3>Deliver with records</h3>
+            <p>Keep invoices, asset history, and activity logs tied to the final delivery.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="showcase" aria-label="Product interface showcase">
+        <img
+          src="assets/review.png"
+          alt="Project review and approval screen in the Stitch product"
+        />
+        <img
+          src="assets/client-dashboard.png"
+          alt="Client dashboard with chat and production handoff details"
+        />
+      </section>
+
+      <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <p class="eyebrow">Interface system</p>
+          <h2 id="gallery-title">A complete studio toolkit across desktop and mobile.</h2>
+        </div>
+
+        <div class="screen-picker" role="tablist" aria-label="Screen gallery">
+          <button class="is-active" type="button" role="tab" aria-selected="true" data-screen="analytics">
+            Analytics
+          </button>
+          <button type="button" role="tab" aria-selected="false" data-screen="asset">
+            Asset detail
+          </button>
+          <button type="button" role="tab" aria-selected="false" data-screen="activity">
+            Activity log
+          </button>
+        </div>
+
+        <figure class="screen-frame">
+          <img
+            id="gallery-image"
+            src="assets/analytics.png"
+            alt="Analytics dashboard screen in Stitch"
+          />
+          <figcaption id="gallery-caption">
+            Analytics gives producers a fast read on revenue, downloads, approvals, and project momentum.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="mobile-section" aria-labelledby="mobile-title">
+        <div>
+          <p class="eyebrow">Mobile ready</p>
+          <h2 id="mobile-title">Fast checks when the team is away from the edit bay.</h2>
+          <p>
+            Mobile screens keep uploads, reviews, activity, and dashboard signals available during shoots,
+            client calls, and travel days.
+          </p>
+        </div>
+        <div class="phone-row" aria-label="Mobile interface screenshots">
+          <img src="assets/mobile-home.png" alt="Stitch mobile home screen" />
+          <img src="assets/mobile-upload.png" alt="Stitch mobile project upload screen" />
+          <img src="assets/mobile-activity.png" alt="Stitch mobile activity center screen" />
+        </div>
+      </section>
+
+      <section class="access" id="contact" aria-labelledby="access-title">
+        <p class="eyebrow">Studio access</p>
+        <h2 id="access-title">Give motion work a sharper home.</h2>
+        <p>
+          Stitch is designed for teams that need premium assets, clear client review,
+          and operational visibility in one cinematic workspace.
+        </p>
+        <a class="button primary" href="mailto:access@stitch.example">Request access</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Stitch</p>
+      <p>Premium motion asset hub for modern production teams.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
