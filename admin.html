@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin | Zenvix Motion</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body class="admin-body">
+    <header class="site-header">
+      <a class="brand" href="/">
+        <span class="brand-mark">ZM</span>
+        <span>Zenvix Motion Admin</span>
+      </a>
+      <nav><a href="/">Website</a></nav>
+    </header>
+
+    <main class="admin-main">
+      <section class="admin-login" id="loginPanel">
+        <h1>Admin Control Room</h1>
+        <p>Upload work, view visitor logs, and reply to live chats.</p>
+        <label>Admin Password<input id="password" type="password" value="admin123"></label>
+        <button class="button primary" id="loginButton" type="button">Open Admin</button>
+      </section>
+
+      <section id="adminPanel" class="admin-grid" hidden>
+        <form id="uploadForm" class="admin-card">
+          <h2>Upload Work</h2>
+          <label>Title<input name="title" required></label>
+          <label>Category<input name="category" placeholder="Ad film, Short film, Event"></label>
+          <label>Client<input name="client"></label>
+          <label>Year<input name="year" type="number" value="2026"></label>
+          <label>Description<textarea name="description" rows="4"></textarea></label>
+          <label>Media<input name="media" type="file" accept="image/*,video/*,.pdf" required></label>
+          <button class="button primary" type="submit">Upload</button>
+          <p id="uploadStatus" class="status"></p>
+        </form>
+
+        <section class="admin-card">
+          <h2>Visitors</h2>
+          <div id="visitorList" class="data-list"></div>
+        </section>
+
+        <form id="storeUploadForm" class="admin-card">
+          <h2>Upload Store Asset</h2>
+          <label>Title<input name="title" required></label>
+          <label>Category<input name="category" placeholder="LUT, Template, Audio, Stock footage"></label>
+          <label>Price<input name="price" type="number" min="1" value="499" required></label>
+          <label>License<input name="license" value="Commercial use for one buyer"></label>
+          <label>Description<textarea name="description" rows="4"></textarea></label>
+          <label>Original Asset<input name="asset" type="file" required></label>
+          <button class="button primary" type="submit">Add to Store</button>
+          <p id="storeUploadStatus" class="status"></p>
+        </form>
+
+        <section class="admin-card chat-admin">
+          <h2>Live Chats</h2>
+          <div id="adminChats" class="data-list"></div>
+          <form id="replyForm" class="reply-form">
+            <input id="replyChatId" placeholder="Chat ID">
+            <input id="replyText" placeholder="Reply message">
+            <button class="button secondary" type="submit">Reply</button>
+          </form>
+        </section>
+      </section>
+    </main>
+    <script src="/admin.js" type="module"></script>
+  </body>
+</html>
