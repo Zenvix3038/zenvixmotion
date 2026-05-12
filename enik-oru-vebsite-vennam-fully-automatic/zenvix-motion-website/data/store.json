@@ -1,0 +1,32 @@
+[
+  {
+    "id": "cinematic-lut-pack",
+    "title": "Cinematic LUT Pack",
+    "category": "Color Grading",
+    "description": "Premium warm teal film look for ads, wedding films and music videos.",
+    "price": "999",
+    "license": "Commercial use for one buyer",
+    "mediaType": "application/zip",
+    "sample": true
+  },
+  {
+    "id": "production-call-sheet",
+    "title": "Production Call Sheet Template",
+    "category": "Production Template",
+    "description": "Clean call sheet template for shoot day planning, crew timing and location notes.",
+    "price": "299",
+    "license": "Personal / studio use",
+    "mediaType": "application/pdf",
+    "sample": true
+  },
+  {
+    "id": "film-title-sound-pack",
+    "title": "Film Title Sound Pack",
+    "category": "Audio",
+    "description": "Short cinematic risers, hits and soft transitions for title openings.",
+    "price": "799",
+    "license": "Commercial use for one buyer",
+    "mediaType": "audio/mpeg",
+    "sample": true
+  }
+]
